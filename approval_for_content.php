@@ -7,7 +7,7 @@ $brand_name = '';
 $content_type = '';
 $ticket_name = '';
 $content_number = '';
-email1 = ''
+$email1 = ''
 
 $query = mysql_query("SELECT gt.client_id,gt.ticket_name,gt.main_type,ci.* FROM generate_ticket gt, client_info ci where ci.fb_pageid = gt.client_id") or die(mysql_error());
 while($result = mysql_fetch_array($query,MYSQL_ASSOC)){
